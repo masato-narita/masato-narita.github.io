@@ -8,9 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!--レスポンシブ・ウェブデザインにするためのコード。デバイスごとに表示サイズが合う-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       
+        <meta name="Keywords" content="ポートフォリオ,Crelog,Home" />
+        <meta name="description" content="PortfolioサイトTopページ" />
         <title>CreLog |Home</title>
-        
+    
         <!--読み込む順番はBootstrapのCSS→jQuery→BootstrapのJS。bootのjsはjQueryの後。-->
         <!--BootstrapのCSSの読み込み-->
         <link rel="stylesheet" href="////maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -27,38 +28,40 @@
         <header>
         </header>
         <!--Header-->
-        
-        <div class="container">
-        <!--Section-->
-            <section>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container">
+                <!--Section-->
+                <section>
+                    <div id="logo">
+                    <!--ここにロゴ入れる-->
+                    <img src="logo.png" alt="CreLog-logo" />
+                    </div>
+                    <!--navはindexでdiv class="menu"に書かれた部分-->
+                    <!--メニュー（ナビゲーション）としてまとまりを扱う-->
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="selected">Home</a></li>
+                            <li><a href="about.html" >About</a></li>
+                            <li><a href="portfolio.html" >Portfolio</a></li>
+                        </ul>
+                    </nav>
                 
-            <div id="logo">
-            <!--ここにロゴ入れる-->
-            <img src="logo.png" alt="CreLog-logo" />
+                        <p>ここは成田のポートフォリオwebサイトです。</p>
+                
+                    </section>
+                    <!--Section-->
+                </div>
             </div>
-            <!--navはindexでdiv class="menu"に書かれた部分-->
-            <!--メニュー（ナビゲーション）としてまとまりを扱う-->
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="portfolio.html" >Portfolio</a></li>
-                </ul>
-            </nav>
-                
-                <p>ここは成田のポートフォリオwebサイトです。</p>
-                
-            </section>
-        <!--Section-->
-        
+        </div>
         <!--Footer-->
             <footer>
                 <!--&copy;はコピーライトの記号がでてくる-->
                 <p>&copy; 2016 Masato Narita.</p>
             </footer>
         <!--Footer-->
+
         
-        </div>
     </body>
 </html>
     

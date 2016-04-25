@@ -1,28 +1,22 @@
 /*共通*/
-
 html {
     /*左右最大表示のため*/
-    overflow: auto;
     margin: auto;
 }
 
 body{
     background-image: url(glid.jpg);
+    padding-bottom: 100px;
+    overflow-x: hidden;
 }
 
-footer{
+footer {
+    width: 100%;
+    text-align: center; 
 
     /*表示位置*/
     bottom: 0;
-    height:  2em;
-    position: absolute;
-    
-    /*左右最大表示のために*/
-    margin-left: -500%;
-	margin-right: -500%;
-	padding-left: 500%;
-	padding-right: 500%;
- 
+    position: fixed;
     /*93%はbodyで指定した14pxの93%ってこと*/
     font-size: 80%;
     background-color: #ccc;
@@ -39,21 +33,16 @@ footer{
 
 #index #logo{
     /*ロゴを中央に*/
-    padding: 20px 0;
     text-align: center;
 }
 
 #index body {
-    /*左右最大表示のため*/
-    overflow: hidden;
-    
     /*フォントを選択*/
     font-family: YuGothic, "游ゴシック", "メイリオ",  Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
     /*フォントサイズ*/
     font-size: 24px;
 
     /*body内を縦横中央揃えに*/
-    position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -66,7 +55,6 @@ footer{
 #index nav {
     /*メニューの余白の設定*/
     margin: 0 0 30px 0;
-    padding: 10px 0;
     /*メニューを中央揃えに*/
     text-align: center;
     background: RGBA(255,255,255,0);
@@ -99,14 +87,15 @@ footer{
 }
 
 #index .container {
-    max-width: 800px;
     /*marginは3つなら、上、左右、下になる。autoは中央揃え*/
     margin: 0 auto 0;
     background-color: RGBA(255,255,255,0.9);
     text-align: center;
 }
 
-
+#index section img{
+    padding-bottom:20px; 
+}
 
 
 /*Home以外共通*/
@@ -159,15 +148,12 @@ footer{
 }
 
 .main body {
-/*    左右最大表示のため*/
-    overflow: hidden;
 /*    フォントを選択*/
     font-family: YuGothic, "游ゴシック", "メイリオ",  Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
 /*    フォントサイズ*/
     font-size: 24px;
 
 /*    body内を縦横中央揃えに*/
-    position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -177,25 +163,29 @@ footer{
 }
 
 .main .container {
-    padding: 0;
+    padding: 0 0 0 20;
 /*    marginは3つなら、上、左右、下になる。autoは中央揃え*/
     margin: 0 auto 0;
     background-color: RGBA(255,255,255,0.9);
-    
 }
 
-#profile p img{
-    margin-left: 25px;
-    margin-right: 50px;
+.main .container div ul li{
+    list-style-type:none;
+}
+
+#profile img{
+    margin-left: auto;
+    margin-right: auto;
 /*    画像の最大幅*/
     max-width: 150px;
 /*    ボーダーラインの幅、本数、色*/
     border: 5px solid #666;
 /*    角をスムーズする。100%だから丸になる*/
     border-radius: 150%
+
 }
 
-#profile p{
+#profile > ul{
     display:inline-block;
     vertical-align:middle;
     text-align: center;
