@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" id="index">
+<html lang="ja" id="portfolio" class="main">
     
     <head>
         <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
         <!--レスポンシブ・ウェブデザインにするためのコード。デバイスごとに表示サイズが合う-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
-        <title>CreLog |Home</title>
+        <title>CreLog |portfolio</title>
         
         <!--読み込む順番はBootstrapのCSS→jQuery→BootstrapのJS。bootのjsはjQueryの後。-->
         <!--BootstrapのCSSの読み込み-->
@@ -25,31 +25,55 @@
     <body>
         <!--Header-->
         <header>
+            <div class="row">
+                <div id="logo" class="col-sm-12">
+                <!--ここにロゴ入れる-->
+                <img src="logo.png" alt="CreLog-logo" />
+                </div>
+            </div>
+            
+            <div class="row">
+            <!--navはindexでdiv class="menu"に書かれた部分-->
+            <!--メニュー（ナビゲーション）としてまとまりを扱う-->
+            <nav class="col-sm-12">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+                </ul>
+            </nav>
+            </div>
         </header>
         <!--Header-->
         
+        
         <div class="container">
         <!--Section-->
-            <section>
+            <h1>Portfolio</h1><br />
+            <section class="row">
+
+                        <div class="col-sm-4">
+                        <a><img src="sample.png" alt="testlink" /><br />
+                            リンクページへ
+                        </a>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                        <a><img src="sample.png" alt="testlink" /><br />
+                            リンクページへ
+                        </a>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                        <a><img src="sample.png" alt="testlink" /><br />
+                            リンクページへ
+                        </a>
+                        </div>
                 
-            <div id="logo">
-            <!--ここにロゴ入れる-->
-            <img src="logo.png" alt="CreLog-logo" />
-            </div>
-            <!--navはindexでdiv class="menu"に書かれた部分-->
-            <!--メニュー（ナビゲーション）としてまとまりを扱う-->
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="portfolio.html" >Portfolio</a></li>
-                </ul>
-            </nav>
-                
-                <p>ここは成田のポートフォリオwebサイトです。</p>
-                
+                                    
             </section>
         <!--Section-->
+        </div>
         
         <!--Footer-->
             <footer>
@@ -58,7 +82,6 @@
             </footer>
         <!--Footer-->
         
-        </div>
+        
     </body>
 </html>
-    

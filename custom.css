@@ -1,0 +1,205 @@
+/*共通*/
+
+html {
+    /*左右最大表示のため*/
+    overflow: auto;
+    margin: auto;
+}
+
+body{
+    background-image: url(glid.jpg);
+}
+
+footer{
+
+    /*表示位置*/
+    bottom: 0;
+    height:  2em;
+    position: absolute;
+    
+    /*左右最大表示のために*/
+    margin-left: -500%;
+	margin-right: -500%;
+	padding-left: 500%;
+	padding-right: 500%;
+ 
+    /*93%はbodyで指定した14pxの93%ってこと*/
+    font-size: 80%;
+    background-color: #ccc;
+    color: #666;  
+}
+
+
+/*インデックス*/
+#index header{
+    background-color: #666;
+    height: 2em;
+    margin-bottom: 200px;
+}
+
+#index #logo{
+    /*ロゴを中央に*/
+    padding: 20px 0;
+    text-align: center;
+}
+
+#index body {
+    /*左右最大表示のため*/
+    overflow: hidden;
+    
+    /*フォントを選択*/
+    font-family: YuGothic, "游ゴシック", "メイリオ",  Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    /*フォントサイズ*/
+    font-size: 24px;
+
+    /*body内を縦横中央揃えに*/
+    position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	
+}
+
+
+#index nav {
+    /*メニューの余白の設定*/
+    margin: 0 0 30px 0;
+    padding: 10px 0;
+    /*メニューを中央揃えに*/
+    text-align: center;
+    background: RGBA(255,255,255,0);
+}
+
+#index nav ul{
+    margin: 0 10px;
+    padding: 0;
+}
+
+#index nav ul li {
+    /*余白　上下0 左右20*/
+    margin: 0 20px;
+    /*inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
+    display: inline-block;
+}
+
+#index nav ul li a {
+    /*余白*/
+    padding: 15px 10px;
+     /*リンクの下線を消す*/
+    text-decoration: none;
+    /*カラーをグレーにしてboldは太文字に*/
+    color: #999;
+    font-weight: bold;
+}
+
+#index nav ul li a.selected{
+    color: #000;
+}
+
+#index .container {
+    max-width: 800px;
+    /*marginは3つなら、上、左右、下になる。autoは中央揃え*/
+    margin: 0 auto 0;
+    background-color: RGBA(255,255,255,0.9);
+    text-align: center;
+}
+
+
+
+
+/*Home以外共通*/
+
+.main header{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.main #logo{
+    float: left;
+    padding: 0px 0;
+}
+
+.main nav {
+/*    メニューの余白の設定*/
+    margin: 0 0 5px 0;
+    padding: 10px 0;
+    background: #fff;
+/*    下線*/
+    border-bottom: 4px solid #666;
+}
+
+.main nav ul{
+    margin: 0 10px;
+    padding: 0;
+}
+
+.main nav ul li {
+/*    余白　上下0 左右20*/
+    margin: 0 20px;
+/*    inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
+    display: inline-block;
+}
+
+.main nav ul li a {
+/*    余白*/
+    padding: 15px 10px;
+/*     リンクの下線を消す*/
+    text-decoration: none;
+/*    カラーをグレーにしてboldは太文字に*/
+    color: #999;
+    font-weight: bold;
+}
+
+.main nav ul li a.selected{
+    color: #000;
+}
+
+.main body {
+/*    左右最大表示のため*/
+    overflow: hidden;
+/*    フォントを選択*/
+    font-family: YuGothic, "游ゴシック", "メイリオ",  Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+/*    フォントサイズ*/
+    font-size: 24px;
+
+/*    body内を縦横中央揃えに*/
+    position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+
+}
+
+.main .container {
+    padding: 0;
+/*    marginは3つなら、上、左右、下になる。autoは中央揃え*/
+    margin: 0 auto 0;
+    background-color: RGBA(255,255,255,0.9);
+    
+}
+
+#profile p img{
+    margin-left: 25px;
+    margin-right: 50px;
+/*    画像の最大幅*/
+    max-width: 150px;
+/*    ボーダーラインの幅、本数、色*/
+    border: 5px solid #666;
+/*    角をスムーズする。100%だから丸になる*/
+    border-radius: 150%
+}
+
+#profile p{
+    display:inline-block;
+    vertical-align:middle;
+    text-align: center;
+}
+
+
+
