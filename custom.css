@@ -1,7 +1,7 @@
 /*共通*/
 html {
-    /*左右最大表示のため*/
-    margin: auto;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
