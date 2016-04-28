@@ -1,13 +1,13 @@
 /*共通*/
 html {
     margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
 body{
     background-image: url(glid.jpg);
     padding-bottom: 100px;
+
 }
 
 footer {
@@ -66,8 +66,8 @@ footer {
 }
 
 #index nav ul li {
-    /*余白　上下0 左右20*/
-    margin: 0 20px;
+    /*余白　上下右0 左20*/
+    margin: 0 0 0 20px;
     /*inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
     display: inline-block;
 }
@@ -88,7 +88,7 @@ footer {
 
 #index .container {
     /*marginは3つなら、上、左右、下になる。autoは中央揃え*/
-    margin: 0 auto 0;
+    margin: 0;
     background-color: RGBA(255,255,255,0.9);
     text-align: center;
 }
@@ -127,8 +127,8 @@ footer {
 }
 
 .main nav ul li {
-/*    余白　上下0 左右20*/
-    margin: 0 20px;
+/*    余白　上下右0 左20*/
+    margin: 0 0 0 20px;
 /*    inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
     display: inline-block;
 }
@@ -190,6 +190,4 @@ footer {
     vertical-align:middle;
     text-align: center;
 }
-
-
 
