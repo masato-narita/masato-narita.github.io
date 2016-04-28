@@ -1,10 +1,11 @@
 /*共通*/
 html {
     margin: 0;
-    overflow-x: hidden;
 }
 
 body{
+    overflow-x: hidden;
+    margin: 0;
     background-image: url(glid.jpg);
     padding-bottom: 100px;
 
@@ -23,17 +24,20 @@ footer {
     color: #666;  
 }
 
+.row{
+    margin: 0;
+}
+
+div .container{
+    padding: 0;
+}
+
 
 /*インデックス*/
 #index header{
     background-color: #666;
     height: 2em;
     margin-bottom: 200px;
-}
-
-#index #logo{
-    /*ロゴを中央に*/
-    text-align: center;
 }
 
 #index body {
@@ -61,7 +65,7 @@ footer {
 }
 
 #index nav ul{
-    margin: 0 10px;
+    margin: 0 0 0 10px;
     padding: 0;
 }
 
@@ -88,7 +92,7 @@ footer {
 
 #index .container {
     /*marginは3つなら、上、左右、下になる。autoは中央揃え*/
-    margin: 0;
+    margin: 0 auto 0;
     background-color: RGBA(255,255,255,0.9);
     text-align: center;
 }
@@ -109,7 +113,7 @@ footer {
 
 .main #logo{
     float: left;
-    padding: 0px 0;
+    padding: 0;
 }
 
 .main nav {
@@ -122,12 +126,12 @@ footer {
 }
 
 .main nav ul{
-    margin: 0 10px;
+    margin: 0 0 0 10px;
     padding: 0;
 }
 
 .main nav ul li {
-/*    余白　上下右0 左20*/
+/*    余白　上下右0 左右20*/
     margin: 0 0 0 20px;
 /*    inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
     display: inline-block;
