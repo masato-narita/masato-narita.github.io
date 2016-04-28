@@ -4,7 +4,7 @@ html {
 }
 
 body{
-    overflow-x: hidden;
+    width: 100%;
     margin: 0;
     background-image: url(glid.jpg);
     padding-bottom: 100px;
@@ -65,7 +65,7 @@ div .container{
 }
 
 #index nav ul{
-    margin: 0 0 0 10px;
+    margin: 0;
     padding: 0;
 }
 
@@ -177,7 +177,7 @@ div .container{
     list-style-type:none;
 }
 
-#profile img{
+#icon img{
     margin-left: auto;
     margin-right: auto;
 /*    画像の最大幅*/
@@ -186,12 +186,22 @@ div .container{
     border: 5px solid #666;
 /*    角をスムーズする。100%だから丸になる*/
     border-radius: 150%
-
 }
 
-#profile > ul{
-    display:inline-block;
-    vertical-align:middle;
+#icon{
     text-align: center;
 }
 
+#icon > ul{
+    padding: 0;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+#profile > ul{
+    padding: 0;
+}
+
+.col-sm-4{
+    text-align: center;
+}
